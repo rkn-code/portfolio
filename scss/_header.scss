@@ -1,0 +1,65 @@
+@use "variables"as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $main;
+    height: 56px;
+    width: calc(100vw - 152px);
+    padding-top: 16px;
+    padding-left: 24px;
+
+    font-family: $bold;
+    letter-spacing: 1.5px;
+
+    &-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-nav {
+        display: flex;
+    }
+
+    &-border {
+        border-bottom: 2px solid $dgray;
+    }
+    
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: $main;
+    height: 40px;
+    width: calc(100vw - 152px);
+    margin-top: 56px;
+    // padding-left: 24px;
+
+    font-family: $bold;
+    letter-spacing: 1.5px;
+
+    .header{
+        
+        &-navbar {
+            padding-left: 24px;
+        }
+
+        &-nav {
+            margin-right: 151px;
+
+            &__link {
+                font-size: 28px;
+                padding-left: 72px;
+            }
+        }
+
+        &-border {
+            border-bottom: 1px solid $dgray;
+        }
+    }
+}

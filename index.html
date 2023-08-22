@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+
+	<!-- Webフォント -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.typekit.net/ccv6kca.css">
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Common css -->
+	<link rel="stylesheet" href="./css/style.min.css">
+
+
+	<!-- Import vue.js -->
+	<!-- <script src="https://unpkg.com/vue@next"></script> -->
+
+	<!-- Common JS -->
+	<!-- <script src="./js/common.js"></script> -->
+
+</head>
+
+<body id="app">
+	<cursor-fx color="#39B509" color-hover="#acf98e"></cursor-fx>
+	<div class="home-wrap">
+		
+
+			<!-- Side bar -->
+			<aside class="aside">
+				
+				<div class="aside-nav">
+					
+					<div class="sns-link">
+						<a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-github"></i></a>
+						<a href="" class="sns-link__icon sns-link__icon--primary "><i class="fab fa-instagram"></i></a>
+						<a href="" class="sns-link__icon sns-link__icon--primary"><i class="fab fa-facebook-f"></i></a>
+					</div>
+					
+					<article class="aside-forecast">
+						<h4 class="aside-forecast__weather">晴れ</h4>
+						<span class="aside-forecast__icon fa fa-thin fa-sun"></span>
+						<p class="aside-forecast__date">2022.08.09</p>
+					</article>
+					
+				</div>
+				
+			</aside>
+			<!-- header & main -->
+			<div class="page-container">
+				
+				<header>
+					<div class="header">
+						<h4>Portfolio</h4>
+						<div class="header-border"></div>
+					</div>
+				</header>
+				
+				<main>
+					<div class="main">
+						<nav>
+							<ul class="main-nav">
+								<li class="main-nav__link"><a href="./works/page.html">Work</a></li>
+								<li class="main-nav__link"><a href="./skills.html">Skills</a></li>
+							</ul>
+						</nav>
+						<div class="main-title">
+							<h2 class="main-title__font main-title__head">Web Design,<br>Developer</h2>
+						</div>
+					</div>
+				</main>
+			</div>
+		
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@luxdamore/vue-cursor-fx@1.4.0/dist/CursorFx.umd.min.js"></script>
+	<script src="./js/main.js"></script>
+	
+	
+</body>
+
+</html>

@@ -1,0 +1,925 @@
+@charset "UTF-8";
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+body {
+  color: #000000;
+  font-family: "futura-pt", "Noto San Serif JP", "Shippori Mincho", serif;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+span {
+  display: inline-block;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
+
+.pc-none {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 56px;
+  width: calc(100vw - 152px);
+  padding-top: 16px;
+  padding-left: 24px;
+  font-family: "futura-pt-bold";
+  letter-spacing: 1.5px;
+}
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+}
+.header-border {
+  border-bottom: 2px solid #333333;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+  height: 40px;
+  width: calc(100vw - 152px);
+  margin-top: 56px;
+  font-family: "futura-pt-bold";
+  letter-spacing: 1.5px;
+}
+.page-header .header-navbar {
+  padding-left: 24px;
+}
+.page-header .header-nav {
+  margin-right: 151px;
+}
+.page-header .header-nav__link {
+  font-size: 28px;
+  padding-left: 72px;
+}
+.page-header .header-border {
+  border-bottom: 1px solid #333333;
+}
+
+.aside {
+  background-color: #FFFFFF;
+  border-right: 1px solid #333;
+  height: calc(100vh - 40px);
+  width: 112px;
+  text-align: center;
+  position: relative;
+}
+.aside-nav {
+  width: 80px;
+  height: 411px;
+  position: absolute;
+  top: calc(100vh - 71.3%);
+  margin-left: 14%;
+}
+.aside-nav .sns-link {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #333;
+}
+.aside-nav .sns-link__icon {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.aside-forecast {
+  margin: 32px calc(33% - 3px) 0;
+}
+.aside-forecast__weather {
+  writing-mode: vertical-rl;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+.aside-forecast__icon {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.aside-forecast__date {
+  font-family: "Shippori Mincho";
+  margin: auto;
+  color: #333333;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.page-aside {
+  background-color: #FFFFFF;
+  border-right: 1px solid #333;
+  height: 100vh;
+  width: 112px;
+  text-align: center;
+  position: relative;
+}
+.page-aside .aside-nav {
+  top: calc(100vh - 63%);
+}
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+/*スクロールダウン全体の場所*/
+.scrolldown4 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  bottom: 1%;
+  right: 95%;
+  /*矢印の動き1秒かけて永遠にループ*/
+  -webkit-animation: arrowmove 2s ease-in-out infinite;
+          animation: arrowmove 2s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@-webkit-keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+@keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+/*Scrollテキストの描写*/
+.scrolldown4 span {
+  /*描画位置*/
+  position: absolute;
+  left: -6px;
+  bottom: 60px;
+  /*テキストの形状*/
+  color: #000000;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #000000;
+  transform: skewX(-31deg);
+}
+
+.scrolldown4:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*矢印の形状*/
+  width: 1px;
+  height: 50px;
+  background: #000000;
+}
+
+.home-wrap {
+  padding: 40px 0 0 40px;
+  display: flex;
+  background-color: #000000;
+}
+
+.page-wrap {
+  padding-left: 40px;
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: #FFFFFF;
+  height: calc(100vh - 96px);
+  width: calc(100vw - 152px);
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-nav {
+  font-family: "futura-pt-bold";
+  font-size: 40px;
+  margin-left: 48px;
+  margin-top: 56px;
+  letter-spacing: 1.5px;
+}
+.main-nav__link {
+  padding-bottom: 8px;
+}
+.main-title {
+  padding-left: 72px;
+  margin-bottom: 96px;
+}
+.main-title__font {
+  font-family: "futura-pt-bold";
+  font-size: 114px;
+  line-height: 0.8;
+  letter-spacing: -5px;
+}
+
+.work-container {
+  width: 400px;
+  height: 340px;
+  margin: calc(100vh - 51%) calc(100vw - 83%);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.work-links {
+  top: -64px;
+  left: -180px;
+  position: absolute;
+  font-family: "futura-pt-condensed";
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.work-detail {
+  position: absolute;
+  bottom: -23px;
+  left: calc(100% + 80px);
+  width: 250px;
+  height: 97px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work-detail__title h5 {
+  color: #333333;
+  font-family: "futura-pt";
+}
+.work-detail__desc {
+  color: #333333;
+  font-family: "Noto San Serif JP";
+}
+.work-detail__text {
+  font-family: "futura-pt";
+  color: #333333;
+}
+.work-filter {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.work-image-wrap {
+  height: 100%;
+  overflow: hidden;
+  top: calc(50% - 100px);
+  left: calc(50% - 125px);
+  display: flex;
+  align-items: center;
+}
+.work-image-wrap img {
+  width: 100%;
+  position: absolute;
+  box-shadow: 24px 24px 1px #D6D6D6;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 80px auto 0;
+  color: #333333;
+}
+.skill-container p {
+  font-family: "Noto San Serif JP";
+  font-size: 12px;
+  line-height: 1.5;
+}
+.skill-container li {
+  font-family: "futura-pt";
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.skill-headline {
+  font-family: "futura-pt-bold";
+  letter-spacing: 1px;
+  margin-bottom: 48px;
+}
+.skill-title {
+  margin-bottom: 24px;
+  font-family: "futura-pt-bold";
+  letter-spacing: 1px;
+}
+.skill-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 80px;
+  height: 521px;
+  width: 614px;
+}
+.skill-left__up {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skill-left .left-up {
+  display: flex;
+}
+.skill-left .left-up .up-left {
+  width: 272px;
+  margin-right: 80px;
+}
+.skill-left .left-up .up-right {
+  width: 272px;
+}
+.skill-left .left-up .up-right__icon {
+  margin-right: 8px;
+}
+.skill-left .left-up .up-right__desc {
+  font-family: "futura-pt";
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.skill-left .left-up .up-right__tag {
+  font-family: "Noto San Serif JP";
+  font-size: 12px;
+}
+.skill-left__down {
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skill-left .left-down {
+  display: flex;
+  flex-direction: row;
+}
+.skill-left .left-down .down-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 272px;
+  margin-right: 80px;
+}
+.skill-left .left-down .down-left__up {
+  margin-bottom: 24px;
+}
+.skill-left .left-down .down-left__title {
+  margin-bottom: 24px;
+}
+.skill-left .left-down .down-right {
+  width: 272px;
+}
+.skill-right {
+  padding-top: 196px;
+  margin-left: 112px;
+  height: 521px;
+  width: 264px;
+}
+.skill-right .right-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.skill-right .right-wrap__first {
+  font-family: "futura-pt-bold";
+}
+.skill-right .bar-wrap__box {
+  position: relative;
+  background-color: #D6D6D6;
+  height: 8px;
+  width: 144px;
+}
+.skill-right .bar-wrap__desc {
+  position: absolute;
+  top: -24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.skill-right .bar-wrap__rate {
+  position: absolute;
+  height: 100%;
+  background-color: #27BFC6;
+}
+
+.section-feature {
+  background-color: #FFFFFF;
+  height: 2200px;
+  width: calc((100vw - 80px) / 2);
+  position: absolute;
+  z-index: 1;
+}
+.section-feature .feature-gallery {
+  width: 512px;
+  margin-left: 72px;
+  margin-top: 176px;
+}
+.section-feature .feature-gallery .img {
+  width: 100%;
+  margin-bottom: 72px;
+  box-shadow: 3px 3px 3px 3px #d6d6d6;
+}
+.section-feature .feature-gallery .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-fix {
+  position: fixed;
+  top: 0;
+  padding-left: 72px;
+}
+.section-fix .desc-wrap {
+  position: absolute;
+  left: calc(50vw + 40px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 522px;
+}
+.section-fix .desc-container {
+  height: 342px;
+  width: 374px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-fix .desc-content__title {
+  font-family: "futura-pt-condensed";
+  letter-spacing: 1px;
+}
+.section-fix .desc-content__textarea {
+  margin-top: 32px;
+  font-family: "Noto San Serif JP";
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+}
+.section-fix .desc-techarea__techtitile {
+  font-family: "futura-pt";
+}
+.section-fix .desc-techarea__text p {
+  margin-top: 16px;
+  font-family: "Noto San Serif JP";
+  font-size: 12px;
+  color: #333333;
+}
+.section-fix .desc-icon li {
+  color: #333333;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=style.css.map */

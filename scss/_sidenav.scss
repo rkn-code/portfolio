@@ -1,0 +1,71 @@
+@use "variables"as *;
+
+.aside {
+    background-color: $main;
+    border-right: 1px solid #333;
+    height: calc(100vh - 40px);
+    width: 112px;
+    text-align: center;
+    position: relative;
+
+    &-nav {
+        // padding-top: 228px;
+        width: 80px;
+        height: 411px;
+        position: absolute;
+        top: calc(100vh - 71.3%);
+        margin-left: 14%;
+
+        .sns-link {
+            display: flex;
+            flex-direction: column;
+        
+            padding-bottom: 12px;
+            border-bottom: 1px solid #333;
+            &__icon {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+
+    &-forecast {
+        margin: 32px calc(33% - 3px) 0;
+
+        &__weather {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+        &__icon {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        &__date {
+            font-family: $smincho;
+            margin: auto;
+            color: $dgray;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    }
+}
+
+.page-aside {
+    background-color: $main;
+    border-right: 1px solid #333;
+    height: 100vh;
+    width: 112px;
+    text-align: center;
+    position: relative;
+
+    .aside {
+
+        &-nav {
+            top: calc(100vh - 63%);
+        }
+        
+    }
+}
